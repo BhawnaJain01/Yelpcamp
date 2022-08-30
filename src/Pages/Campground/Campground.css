@@ -1,0 +1,91 @@
+.searchbar{
+    
+        width: 87%;
+        height: 10rem;
+        background-color: rgb(86 77 77 / 7%);;
+        display: flex;
+        padding-left: 200px;
+        padding-top: 50px;
+    
+    
+}
+
+.dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        margin-right : 20px;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #f1f1f1}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+      }
+
+      /* CARDS CSS .....!!! */
+      .cardsMainDiv{
+         display: flex;
+         justify-content: center;
+         margin-top: 20px;
+      }
+      .cards{
+        display: flex;
+        width: 800px;
+        height: 200px;
+        /* background-color: #3e8e41; */
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 5px 2px 10px 2px lightgray;
+      }   
+
+      .cardImg{
+        margin-top: 5px;
+        width : 250px;
+        height: 190px;
+        border-radius: 10px;
+        margin-left: 5px;
+      }
+
+      .campName{
+        margin-top : 10px;
+        margin-left: 10px;
+        font-size:20px ;
+        font-weight: 600;
+      }
+
+      .priceTag{
+        background-color: #F1F8EA;
+        width: 210px;
+        border-radius: 10px;
+        height: 115px;  
+        margin-top: 3px;
+      }
