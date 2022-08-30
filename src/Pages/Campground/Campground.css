@@ -1,23 +1,30 @@
 .searchbar{
     
-        width: 87%;
-        height: 10rem;
-        background-color: rgb(86 77 77 / 7%);;
+        /* width: 87%; */
+        height: 5rem;
+        background-color: rgba(171, 165, 165, 0.07);;
         display: flex;
-        padding-left: 200px;
+        padding-left: 300px;
         padding-top: 50px;
     
     
 }
 
+.searchInput:active{
+  border: none;
+  outline: none;
+}
+
 .dropbtn {
-        background-color: #4CAF50;
-        color: white;
+        background-color: #c2cdc2;
+        color: black;
         padding: 16px;
         font-size: 16px;
         border: none;
         cursor: pointer;
         margin-right : 20px;
+        margin-left: 20px;
+        border-radius: 20px;
       }
       
       .dropdown {
@@ -32,6 +39,7 @@
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
+      
       }
       
       .dropdown-content a {
@@ -39,16 +47,24 @@
         padding: 12px 16px;
         text-decoration: none;
         display: block;
+        text-align: left;
+        /* float: left; */
+      
+        
       }
       
       .dropdown-content a:hover {background-color: #f1f1f1}
       
       .dropdown:hover .dropdown-content {
         display: block;
+          /* display: flex;
+        flex-direction: column; */
+        /* margin-left : "20px" */
       }
       
       .dropdown:hover .dropbtn {
-        background-color: #3e8e41;
+        background-color: #879088;
+        color: white;
       }
 
       /* CARDS CSS .....!!! */
@@ -58,6 +74,7 @@
          margin-top: 20px;
       }
       .cards{
+        position: relative;
         display: flex;
         width: 800px;
         height: 200px;
@@ -87,5 +104,11 @@
         width: 210px;
         border-radius: 10px;
         height: 115px;  
-        margin-top: 3px;
+        margin-top: 60px;
+        margin-left: 40px;
+      }
+
+      .hoverWala:hover{
+        background-color: #e0e4e4;
+        cursor: pointer;
       }
