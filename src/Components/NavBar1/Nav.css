@@ -1,7 +1,7 @@
 .NavBar1{
     width: 100%;
     height: 5rem;
-    background-color: #2f6587eb;
+    background-color: #022B3A;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
@@ -10,6 +10,9 @@
     bottom: 0;
     left: 0;
     right: 0;
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%) ;
+
+    
 }
 .yelpcamp1{
 
@@ -18,7 +21,11 @@
     font-weight:500;
     margin-top: 1rem;
     margin-left: 100px; 
-   
+    /* background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent; */
 }
 
 .leftSubDiv1{
@@ -27,6 +34,7 @@
     color: hsl(0deg 0% 93%);
     justify-content: space-evenly;
     width: 40rem;
+    padding-top: 10px;
 } 
 
 .navContent1{
@@ -34,13 +42,25 @@
     font-weight: 500;
     margin-top: 1rem;
     margin-left: 1rem;
+    color:#F5CAC3;
 }
 
 .linkC:hover{
-    color: rgb(7, 33, 48);
-
+    
+    color:rgb(7, 33, 48);
 }
 .linkC{
     text-decoration: none;
-    color: hsl(0deg 0% 93%);
+    color:  #F5CAC3;
+}
+
+.homeicon{
+    margin-top: 16px;
+    margin-right: -38px;
+    color:#F5CAC3;
+    
+}
+.avatar{
+    margin-top: 10px;
+    background-color: #F5CAC3;
 }

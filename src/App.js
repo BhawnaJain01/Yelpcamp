@@ -5,7 +5,8 @@ import HomePage from "./Pages/HomePage/HomePage";
 import NavBar from "./Components/Navbar/Navbar";
 import Campgrounds from "./Pages/Campground/Campground";
 import AddCampGroundPage from "./Pages/AddCampGround/AddCampGroundPage";
-
+import Contact from "./Pages/Contact/Contact"
+// import <Contact from "./Pages/Contact/Signup"
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/Campgrounds" element={<Campgrounds />} />
         <Route path="/AddCampgrounds" element={<AddCampGroundPage />} />
+        <Route path="/Contact" element={<Contact/>} />
       </Routes>
     </div>
   );

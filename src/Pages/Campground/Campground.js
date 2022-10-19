@@ -11,6 +11,7 @@ import { GoLocation } from "react-icons/go";
 import { BiDownArrow } from "react-icons/bi";
 import Button from "@mui/material/Button";
 import ImageModal from "../../Components/ImageModal";
+import map from "../../Assets/map.png"
 
 export default function Campgrounds() {
   return (
@@ -21,17 +22,19 @@ export default function Campgrounds() {
 
       <div className="searchbar">
         <div style={{ display: "flex" }}>
-          <div
-            style={{
+          <div style={{
               border: "2px solid black",
               height: "50px",
               background: "white",
               borderRadius: "10px",
+              borderColor :"#022B3A",
+              marginLeft: "-120px",
+              marginRight: "79px"
             }}
           >
             <AiOutlineSearch
               size={20}
-              style={{ marginTop: "10px", marginLeft: "20px" }}
+              style={{ marginTop: "15px", marginLeft: "18px" }}
             />
             <input
               type="text"
@@ -43,6 +46,7 @@ export default function Campgrounds() {
                 marginBottom: "10px",
                 fontSize: "20px",
                 marginLeft: "20px",
+                // backgroundColor:"#f5cac35c"
               }}
               placeholder="Search Place"
             />
@@ -52,7 +56,7 @@ export default function Campgrounds() {
               style={{
                 marginBottom: "0px",
                 textAlign: "left",
-                marginLeft: "20px",
+                marginLeft: "30px",
                 marginTop: "0px",
                 fontSize: "15px",
               }}
@@ -63,7 +67,7 @@ export default function Campgrounds() {
             <Slider
               style={{
                 width: "280px",
-                color: "black",
+                color: "#022B3A",
                 marginLeft: "20px",
                 // marginTop: "10px",
               }}
@@ -82,12 +86,13 @@ export default function Campgrounds() {
               <a href="#">⭐⭐⭐⭐⭐</a>
               <a href="#">⭐⭐⭐⭐</a>
               <a href="#">⭐⭐⭐</a>
+              <a href="#">⭐⭐</a>
             </div>
           </div>
 
           <Button
             variant="contained"
-            style={{ height: "50px", width: "150px" }}
+            style={{ height: "50px", width: "150px" , backgroundColor:"#022B3A" , borderRadius :"20px" , marginLeft : "100px"}}
           >
             {" "}
             Search{" "}
@@ -118,6 +123,8 @@ export default function Campgrounds() {
       <br />
       <br />
       <br />
+    <div style={{display :"flex" , marginTop:"-52px" }}>
+      
       <div className="cardsMainDiv">
         <div>
           <div className="cards">
@@ -215,6 +222,10 @@ export default function Campgrounds() {
             </div>
           </div>
         </div>
+      </div>
+      <div >
+        <img className="map" src={map} alt="" />
+      </div>
       </div>
     </div>
   );

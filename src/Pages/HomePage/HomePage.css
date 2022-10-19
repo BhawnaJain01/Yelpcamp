@@ -9,7 +9,7 @@
 
 .header {
     font-size: 50px;
-    color: #beced8;
+    color: #dcb5b5;
     text-align: center;
     position: absolute;
     top: 0;
@@ -22,7 +22,7 @@
 }
 .sub-content{
     
-    color:white;
+    color:#dcb5b5;
     text-align: center;
     position: absolute;
     top: 0;
@@ -35,7 +35,7 @@
 }
 .sub-content1{
     
-    color:white;
+    color:#dcb5b5;
     text-align: center;
     position: absolute;
     top: 0;
@@ -44,10 +44,10 @@
     right: 0;
     height: fit-content;
     margin: auto;
-    margin-bottom: 357px;
+    margin-bottom: 330px;
 }
 
-.sub-content2{
+/* .sub-content2{
     
     color:white;
     text-align: center;
@@ -59,12 +59,12 @@
     height: fit-content;
     margin: auto;
     margin-bottom: 337px;
-}
+} */
 
 
-/* 
+
 .yelp{
 position: absolute;
-top: 430;
-left: 670;
-} */
+top: 58%;
+left: 44%
+}
