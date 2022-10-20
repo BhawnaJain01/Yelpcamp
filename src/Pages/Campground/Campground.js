@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useEffect , useState} from "react";
 import NavBar1 from "../../Components/Navbar/Navbar";
 import Nav from "../../Components/NavBar1/Nav";
 import "./Campground.css";
@@ -14,6 +14,31 @@ import ImageModal from "../../Components/ImageModal";
 import map from "../../Assets/map.png"
 
 export default function Campgrounds() {
+
+
+  const [data , setData] = useState();
+
+  useEffect(() => {
+
+    try {
+      fetch("http://localhost:3211/getCampGrounds")
+        .then((resp) => resp.json())
+        .then((resp)=> {
+
+          console.log(resp.data);
+          setData(resp.data);
+
+        })
+
+    } catch (error) {
+      console.log(error);
+    }
+   
+
+  }, [])
+
+
+
   return (
     <div>
       <Nav />
@@ -100,26 +125,6 @@ export default function Campgrounds() {
         </div>
       </div>
 
-      {/* <div className="searchbar">
-        <div className="dropdown">
-          <button className="dropbtn">Rating</button>
-          <div className="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </div>
-
-        <Slider
-          style={{ width: "200px", color: "black" }}
-          defaultValue={50}
-          aria-label="Default"
-          valueLabelDisplay="auto"
-        />
-      </div> */}
-
-      {/* CARDS.......!!!! */}
-
       <br />
       <br />
       <br />
@@ -127,18 +132,20 @@ export default function Campgrounds() {
       
       <div className="cardsMainDiv">
         <div>
+
+      {data && data.map((d)=>(
+
           <div className="cards">
-            {/* <img src={Cards} className="cardImg" alt="" /> */}
-            <ImageModal image={Cards} />
+            <ImageModal image= {`http://localhost:3211/uploads/${d.imageId}`} />
             <div>
               <div style={{ display: "flex" }}>
-                <p className="campName">Camp Mustang, Sohna Road</p>
+                <p className="campName"> {d.title} </p>
                 <AiOutlineHeart
                   size={30}
                   style={{
                     marginTop: "10px",
                     left: "94%",
-                    // marginLeft: "30px",
+                  
                     position: "absolute",
                   }}
                 />
@@ -163,7 +170,7 @@ export default function Campgrounds() {
                   }}
                 />
 
-                <p>3.2 km to city centre</p>
+                <p> {d.description} </p>
               </div>
 
               <div style={{}}>
@@ -181,7 +188,7 @@ export default function Campgrounds() {
                   <span style={{ fontWeight: "550" }}>Very Good</span> (1007
                   reviews){" "}
                 </p>
-              </div>
+              </div>  
             </div>
             <div className="priceTag">
               <p
@@ -221,6 +228,8 @@ export default function Campgrounds() {
               </p>
             </div>
           </div>
+      ))}
+
         </div>
       </div>
       <div >
