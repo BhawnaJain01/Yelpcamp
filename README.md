@@ -1,6 +1,9 @@
 # Overview of the project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Developed a web application facilitating
+tourists to get places acc. to their choices
+for camping .
+
 
 ## Available Scripts
 
