@@ -30,4 +30,11 @@ Launches the project and runs on the brower.\
 ## Campgrounds List 
 ![image](https://user-images.githubusercontent.com/97356776/209426122-19024f69-4f4a-4b26-87c0-48ce20fec6c6.png)
 
+## Wishlist 
+![image](https://user-images.githubusercontent.com/97356776/209426374-0a60a6a2-cc51-462d-ab99-8a1518a5ba69.png)
+
+## Contact Us 
+![image](https://user-images.githubusercontent.com/97356776/209426351-28642f5a-49a3-45e1-b7ba-413c10fe304e.png)
+
+
 
